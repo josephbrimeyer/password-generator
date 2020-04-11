@@ -14,29 +14,11 @@ console.log(upCase);
 console.log(nums);
 console.log(syms);
 
-//let newString = "";
-
-
-//if (nums) {
-  //newString.
-//}
-
-//let userInput = {
-  //passwordLength: (answer),
-  //upperCase: (answer),
-  //lowerCase: (answer),
-  //numbers: (answer),
-  //symbols: (answer),
-
-//}
-//console.log(userInput);
-
-//var car = {
-  //make: "Honda",
-  //model: "Fit",
-  //color: "Blue Raspberry",
-  //mileage: 3000,
-  //isWorking: true,
+// for loop for random number
+for (let j = 0; j < passwordLength; j++) {
+  let nums = Math.floor(Math.random()*10);
+  console.log(nums);
+}
 
 // Write password to the #password input
 function writePassword() {
@@ -49,7 +31,3 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-
-let answer = confirm("Do you like apples?");
-console.log(answer)
