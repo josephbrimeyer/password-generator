@@ -8,15 +8,16 @@ let RNG = [];
 let finalArr = [];
 
 
-passwordBtn.addEventListener("click", function () {
-  let passwordLength;
-  let selPassword = true;
+//passwordBtn.addEventListener("click", function () {
+  //let passwordLength;
+  //let selPassword = true;
   passwordLength = prompt("How many characters would you like your password to be?");
+  
   while (isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128)
     passwordLength = Number(prompt("Please try again.  Length must be between 8-128 characters.  How many characters would you like your password to be?"));
 
   //while (selPassword) {
-  passwordLength = prompt("How many characters would you like your password to be?");
+  //passwordLength = prompt("How many characters would you like your password to be?");
 
 function consoleInside(arrCombined) {
   let arrUpper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
@@ -33,63 +34,63 @@ function consoleInside(arrCombined) {
 }
   let upperC = confirm("Do you want upper case letters in your password?");
   console.log(upperC);
-  if (upperC) {
-    consoleInside(arrUpper)
-  }
   let lowerC = confirm("Would you like to have lower case letters in your password?");
   console.log(lowerC);
-  if (lowerC) {
-    consoleInside(arrLower)
-  }
   let numbers = confirm("Would you like to have numbers in your password?");
   console.log(numbers);
-  if (numbers) {
-    consoleInside(arrNum)
-  }
   let symbols = confirm("Would you like to have special characters in your password?");
   console.log(symbols);
-  if (symbols) {
+  
+  if (upperC = true) {
+    consoleInside(arrUpper)
+  }
+  if (lowerC = true) {
+    consoleInside(arrLower)
+  }
+  if (numbers = true) {
+    consoleInside(arrNum)
+  }
+  if (symbols = true) {
     consoleInside(arrSym)
   }
   console.log(arrCombined)
-
+   
   while (!upperC && !lowerC && !numbers && !symbols) {
     alert("You might select at least one of the following criteria!");
-
+  }
     //if (parseInt(selPassword) < 128 && parseInt(passwordLength) > 8) {
     //selPassword = false;
-    //}
-  })
+
   //let upperC = confirm("Do you want upper case letters in your password?");
   //console.log(upperC);
 
-  for (let i = 0; i < arrUpper.length; i++) {
-    let RNG = Math.floor(Math.random() * arrUpper.length)
-    console.log(arrUpper[RNG])
-  }
+  //for (let i = 0; i < arrUpper.length; i++) {
+   // let RNG = Math.floor(Math.random() * arrUpper.length)
+   // console.log(arrUpper[RNG])
+  //}
   
 
-  for (let i = 0; i < arrLower.length; i++) {
-    let RNG = Math.floor(Math.random() * arrLower.length)
-    console.log(arrLower[RNG])
-  }
-
-  
-
-  for (let i = 0; i < arrNum.length; i++) {
-    let RNG = Math.floor(Math.random() * arrNum.length)
-    console.log(arrNum[RNG])
-  }
+  //for (let i = 0; i < arrLower.length; i++) {
+   // let RNG = Math.floor(Math.random() * arrLower.length)
+   // console.log(arrLower[RNG])
+  //}
 
   
 
-  for (let i = 0; i < symbols.length; i++) {
-    let RNG = Math.floor(Math.random() * arrSym.length)
-    console.log(arrSym[RNG])
-  }
+  //for (let i = 0; i < arrNum.length; i++) {
+   // let RNG = Math.floor(Math.random() * arrNum.length)
+   // console.log(arrNum[RNG])
+  //}
 
-  while (!upperC && !lowerC && !numbers && !symbols) {
-    alert("You might select at least one of the following criteria!");
+  
+
+  //for (let i = 0; i < symbols.length; i++) {
+   // let RNG = Math.floor(Math.random() * arrSym.length)
+   // console.log(arrSym[RNG])
+  //}
+
+  //while (!upperC && !lowerC && !numbers && !symbols) {
+    //alert("You might select at least one of the following criteria!");
     //let upperC = confirm("Do you want upper case letters in your password?");
     //console.log(upperCase);
     //let lowerC = confirm("Would you like to have lower case letters in your password?");
@@ -97,27 +98,27 @@ function consoleInside(arrCombined) {
     //let numbers = confirm("Would you like to have numbers in your password?");
     //console.log(numbers);
     //let symbols = confirm("would you like to have special characters in your password?");
-  }
+ // }
 
-  if (upperC) {
-    finalArr.push(arrUpper);
-  }
-  if (lowerC) {
-    finalArr.push(arrLower);
-  }
-  if (numbers) {
-    finalArr.push(arrNum)
-  }
-  if (symbols) {
-    finalArr.push(arrSym)
-  }
+  //if (upperC) {
+   // finalArr.push(arrUpper);
+  //}
+  //if (lowerC) {
+    //finalArr.push(arrLower);
+ // }
+ // if (numbers) {
+   // finalArr.push(arrNum)
+  //}
+  //if (symbols) {
+   // finalArr.push(arrSym)
+ // }
 
-  console.log(finalArr);
+  //console.log(finalArr);
 
-  for (let index = 0; index < finalArr.length; index++) {
-    const insideArr = finalArr[index];
-  }
-}
+  //for (let index = 0; index < finalArr.length; index++) {
+   // const insideArr = finalArr[index];
+  //}
+//}
 
 // Write password to the #password input
 function writePassword() {
