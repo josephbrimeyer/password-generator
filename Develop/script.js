@@ -9,7 +9,7 @@ let myString = "";
 let finalPassword = "";
 
 function writePassword() {
-  let password = generatePassword();
+  let password = finalPassword;
   let passwordText = document.querySelector("#password");
 
   passwordText.value = password;
@@ -47,11 +47,12 @@ function userInput() {
   writePassword()
 }
 function generatePassword() {
-  
-  for (let i = 0; i < myString.length; i++) {
-    let myString = Math.floor(Math.random() * passwordLength);
-    finalPassword =+ myString;
-    console.log(myString);
+  console.log(passwordLength);
+  console.log(myString)
+  console.log(myString.length);
+    for (let i = 0; i < passwordLength; i++) {
+    let random = Math.floor(Math.random() * myString.length);
+    finalPassword += myString.substring (random,random+1);
     console.log(finalPassword);
   }
   return finalPassword;
