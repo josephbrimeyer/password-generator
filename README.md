@@ -2,13 +2,13 @@
 password-generator
 
 # Description 
-The password-generator application generates a random password based on user-selected criteria. This app runs in the browser and features dynamically updated HTML and CSS powered by JavaScript. The user interface is responsive to multiple screen sizes.  The app utilizes four criteria that the user can select from.  THe criteria are uppercase letters, lowercase letters, numbers, and special characters.  The user can select between one and all of the four criteria.  The password generator also allows the user to determine the length of their random password.  The password can be between 8 and 128 digits long.
+The password-generator application generates a random password based on user-selected criteria. This app runs in the browser and features dynamically updated HTML and CSS powered by JavaScript.  The app utilizes four criteria that the user can select from.  THe criteria are uppercase letters, lowercase letters, numbers, and special characters.  The user can select between one and all of the four criteria.  The password generator also allows the user to determine the length of their random password.  The password can be between 8 and 128 digits long.
 
 The user interface is responsive to multiple screen sizes.  The application creates a secure, random password that provides peace of mind to anyone who desires a password for an application.
 
 ## Installation
 
-The installation requires that the user download the style.css, index.html, and the script.js file to a folder on thier computer.  The program is launched by downloading Visual Studio Code, opening the index.html file in Visual Studio Code and launching the program  and launching the index.html by right clicking on the index.html code, and selecting open in other browser.
+The installation requires that the user download the style.css, index.html, and the script.js file to a folder on thier computer.  The program is launched by downloading Visual Studio Code, opening the index.html file in Visual Studio Code and launching the program  and launching the index.html by right clicking on the index.html code, and selecting open in other browser.  
 
 
 ## Usage 
