@@ -9,6 +9,7 @@ let myString = "";
 let finalPassword = "";
 
 function writePassword() {
+  
   let password = finalPassword;
   let passwordText = document.querySelector("#password");
 
