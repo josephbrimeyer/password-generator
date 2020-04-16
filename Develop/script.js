@@ -16,6 +16,7 @@ function writePassword() {
   console.log();
 }
 function userInput() {
+  finalPassword = "";
   passwordLength = prompt("How many characters would you like your password to be?");
   while (isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
     passwordLength = Number(prompt("Length must be 8-128 characters. How many characters would you like your password to be?"));
@@ -45,6 +46,7 @@ function userInput() {
 
   generatePassword()
   writePassword()
+  
 }
 function generatePassword() {
   console.log(passwordLength);
@@ -58,3 +60,5 @@ function generatePassword() {
   return finalPassword;
 }
 generateBtn.addEventListener("click", userInput);
+
+
